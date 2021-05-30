@@ -1,6 +1,6 @@
 //pl
 
-Nazwa projektu: Countdown Timer
+Nazwa projektu: Czasoodliczator
 
 Aplikacja odliczająca czas do wybranego przez Ciebie wydarzenia. Wpisz nazwę wydarzenia, ustaw datę, zamieść link do obrazka i gotowe!
 
