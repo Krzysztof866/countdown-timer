@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Cabin', sans-serif;
+}
+
+
+.image-section {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('default.jpg');
+    background-size: cover;  
+    background-position: center;  
+}
+
+
+.app-body {
+    width: 800px;
+    height: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 10vh;
+}
+
+
+.settings-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px 30px;
+    font-size: 28px;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+    z-index: 9999;
+}
+
+.settings-btn:hover {
+    color: #F9F9F9;
+    background-color: #333;
+}
+
+.time-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.158);
+    z-index: 100;
+    border-radius: 12px;
+}
+
+h3 {
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.time-cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #d4cbae;
+}
+
+.number {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.card-title {
+    text-align: center;
+    min-height: 20px;
+    padding: 25px;
+    background-color: rgb(160, 69, 69);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 50px 30px;
+    width: 400px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 8px;
+    opacity: 0;
+    transition: transform .5s, opacity .3s;
+}
+
+.active {
+    transform: translateX(-120px);
+    opacity: 1;
+    z-index: 999;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-transform: uppercase; 
+}
+
+label {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+input {
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+    border-radius: 8px;
+    
+}
+
+.date {
+  text-align: center;
+}
+
+.save {
+    padding: 10px 20px;
+    cursor: pointer;
+}
